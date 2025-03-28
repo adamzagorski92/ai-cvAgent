@@ -1,0 +1,88 @@
+{
+	"additional_skills_and_qualifications": {
+		"personal_development_productivity": [
+			{
+				"title": "Psychology of Achievement",
+				"author": "Mateusz Grzesiak",
+				"description": "Course focused on achievement psychology, productivity improvement, and personal/professional effectiveness."
+			},
+			{
+				"title": "Inner War Saga – Adept & Berserker of Hypnotherapy",
+				"description": "Completed courses in hypnotherapy, relaxation techniques, and stress management."
+			},
+			{
+				"title": "Art of Dreaming & Fundamentals",
+				"author": "Michał Wawrzyniak",
+				"description": "Courses on personal development, creativity support, and problem-solving techniques."
+			}
+		],
+		"nutrition_dietetics": [
+			{
+				"title": "Nutrition and Training in Body Shaping and Health Maintenance",
+				"author": "Jacek Bilczyński",
+				"description": "Course on the role of nutrition and training in body composition and health."
+			},
+			{
+				"title": "Dietetics and Supplementation",
+				"author": "Jakub Mauricz",
+				"courses": [
+					"Levels 1, 2, 3",
+					"Basics of Diet Therapy",
+					"Blood Test Interpretation",
+					"Nutrition for Pregnant Women and Children"
+				],
+				"description": "Comprehensive education in dietetics, supplementation, diet therapy, and nutritional analysis."
+			},
+			{
+				"title": "Dietitian Diploma",
+				"organization": "Akademia Dietetyki",
+				"courses": ["Basic Dietetics Course", "Advanced Dietetics Course"],
+				"description": "Certified qualification allowing professional practice as a dietitian."
+			},
+			{
+				"title": "Effective Supplementation",
+				"author": "Dawid Białowąs",
+				"description": "Course on practical use of dietary supplements in health and sport."
+			}
+		],
+		"camp_counselor": {
+			"title": "Camp Counselor Course",
+			"description": "Certified training in youth supervision, educational activities, and sports program planning."
+		},
+		"business_sales": [
+			{
+				"title": "Mental Lingua Franca",
+				"author": "Michał Wawrzyniak",
+				"description": "Business communication, negotiation, sales, and marketing training."
+			},
+			{
+				"title": "Coraz Lepsza Firma",
+				"description": "Program focused on business optimization and company scaling."
+			},
+			{
+				"title": "Telephone Sales Cycle",
+				"organization": "Fortum Academy",
+				"description": "Training in telemarketing and customer service."
+			},
+			{
+				"title": "Upsell Certificate",
+				"organization": "Fortum",
+				"description": "Training in upselling strategies and transaction value increase."
+			}
+		],
+		"charity_social_engagement": [
+			{
+				"title": "Certificate of Appreciation",
+				"organization": "Hospice Foundation",
+				"description": "Recognized for collaboration and contributions to charity."
+			},
+			{
+				"title": "Certificate of Appreciation",
+				"organization": "Ja Też Foundation",
+				"description": "Acknowledged for charity work and social involvement."
+			}
+		],
+		"added_value_summary": "These qualifications highlight commitment to personal development, health and wellness expertise, business and communication skills, and active social engagement.",
+		"certificates_visual": "<img>Carusel</img>"
+	}
+}

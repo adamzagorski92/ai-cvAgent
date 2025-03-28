@@ -1,0 +1,111 @@
+{
+	"experience": {
+		"summary": {
+			"frontend_fullstack": [
+				"HTML",
+				"JavaScript",
+				"TypeScript",
+				"CSS",
+				"SASS",
+				"CSS Module",
+				"React",
+				"WordPress",
+				"Next.js",
+				"WooCommerce",
+				"SEO",
+				"GTM",
+				"payment system integration"
+			],
+			"ai_automation": ["AI in marketing and analytics", "webhooks", "autoresponders", "process automation"],
+			"ecommerce_it_strategy": ["building e-commerce platforms", "conversion optimization", "data analysis"],
+			"marketing_seo": ["Google Ads", "Facebook Ads", "content marketing", "social media", "copywriting"],
+			"team_management": ["organizing sports events", "sales", "negotiations", "training"]
+		},
+		"value_for_employers": [
+			"Develop modern web applications and e-commerce platforms, optimizing UX/UI",
+			"Automate AI-driven processes, saving time and costs",
+			"Implement effective marketing strategies, boosting sales",
+			"Integrate IT systems, improving analytics and conversion rates",
+			"Manage teams, organize events, and communicate effectively with clients"
+		],
+		"technical_experience": {
+			"frontend_fullstack": {
+				"projects": [
+					"React projects (personal website)",
+					"Sportplay.pl – WordPress, WooCommerce, SEO, GTM",
+					"WillaSaga.pl – migration from Joomla to WordPress, SEO, UX/UI",
+					"Websites: Sportplay.pl, NinjaKids.pl, Hanya.pl, WillaSaga.pl (Elementor PRO, Oxygen Builder)"
+				],
+				"tasks": [
+					"Ad campaign implementation",
+					"Analytics tool integration (GTM, GA4, UTM)",
+					"Sales funnel optimization",
+					"Payment system integration",
+					"Marketing automation",
+					"Data analysis and conversion rate optimization"
+				],
+				"value": "Design and develop scalable applications, integrate systems, improve UX and conversion rates"
+			},
+			"ai_automation": {
+				"skills": [
+					"AI workflow optimization",
+					"ChatGPT and AI Copywriting integration",
+					"Automatic content generation",
+					"Autoresponder and funnel setup",
+					"Webhook-based automation (Make/Integromat)",
+					"AI strategies in SEO, marketing, and analytics"
+				],
+				"course": "AI for Developers – ChatGPT from A to Z (Udemy)",
+				"value": "Reduce costs and increase efficiency through AI and automation"
+			},
+			"startup_strategy": {
+				"company": "Ninja Kids Sp. z o.o.",
+				"responsibilities": [
+					"Business automation systems design",
+					"Outdoor sports program strategy",
+					"Technology implementation for scaling",
+					"Analytics integration (GA, GTM, UTM)",
+					"Online marketing strategies",
+					"Website design and optimization"
+				],
+				"value": "Digital transformation and automation for growth, efficiency, and analytics"
+			}
+		},
+		"soft_skills_leadership": {
+			"team_event": {
+				"activities": [
+					"Sports event organization (Spartan Kids, Run Beach Morning, Ninja Kids)",
+					"Managing camps and sports programs",
+					"Team and event coordination"
+				],
+				"value": "Efficient team management and community engagement"
+			},
+			"sales_communication": {
+				"companies": ["Fortum", "FM Group World"],
+				"skills": [
+					"B2B/B2C sales",
+					"Client relationship building",
+					"Negotiation, up-selling, cross-selling",
+					"Training and presentations",
+					"Motivating sales teams"
+				],
+				"value": "Expertise in sales and negotiation to increase revenue and retention"
+			},
+			"public_speaking": {
+				"skills": ["Public speaking", "Clear and engaging presentations", "Effective knowledge transfer"],
+				"value": "Strong communication skills for training and leadership"
+			}
+		},
+		"other_experience": {
+			"sports_charity": {
+				"activities": ["Running competitions", "Charity collaboration", "Online marketing for events"],
+				"value": "Leadership and project management under pressure"
+			},
+			"spartan_kids": {
+				"role": "Manager",
+				"tasks": ["Organizing obstacle races", "Building a sports community", "Marketing and promotion"],
+				"value": "Community building, brand development, and sustainable growth"
+			}
+		}
+	}
+}

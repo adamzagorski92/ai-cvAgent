@@ -1,0 +1,96 @@
+{
+	"what_i_know": {
+		"react": [
+			"Experience in building interactive web applications using React",
+			"Proficiency in JSX, components, props, and state",
+			"Knowledge of hooks (useState, useEffect)",
+			"Experience with React Router (SPA/MPA)",
+			"Understanding of Redux and Context API for state management",
+			"Performance optimization: lazy loading, memoization, React DevTools",
+			"API integration using Axios and Fetch (REST & GraphQL)",
+			"Use of best practices: reusable components, clean code",
+			"Continuous learning of new React features"
+		],
+		"javascript": [
+			"Strong grasp of variables, functions, arrays, objects, and loops",
+			"Asynchronous operations: Promise, async/await, setTimeout, setInterval",
+			"DOM manipulation and dynamic content updates",
+			"Event handling: click, submit, interactions",
+			"Modern ES6+ features: destructuring, arrow functions, template literals, modules",
+			"Optimization: debouncing, throttling, lazy loading",
+			"Experience with jQuery, React, and Next.js"
+		],
+		"typescript": [
+			"Fundamentals of type safety and basic types",
+			"Interfaces, types, and OOP: classes, inheritance, constructors",
+			"TypeScript in React for component stability",
+			"Gradual integration into JavaScript projects",
+			"Basic setup: tsconfig.json and compilation",
+			"Focus on enhancing code readability and security"
+		],
+		"html5": [
+			"Semantic elements: <header>, <footer>, <article>, <section>, <nav>, <main>",
+			"Forms and validation using HTML5 input types",
+			"Multimedia elements: <audio>, <video>, <picture>",
+			"SEO and accessibility optimization",
+			"Modern elements: <progress>, <meter>, <output>",
+			"Integration with CSS and JavaScript"
+		],
+		"css3": [
+			"Selectors, properties, units, cascade principles",
+			"Responsive layouts using Flexbox and Grid",
+			"Animations and transitions",
+			"Media queries for responsiveness",
+			"Advanced features: shadows, gradients, masks, fonts",
+			"Optimization: minimization and SASS/LESS usage"
+		],
+		"git": [
+			"Version control and team collaboration",
+			"Core commands: init, clone, add, commit, push, pull",
+			"Branch management and merge conflict resolution",
+			"Tracking changes with status, diff, log",
+			"Working with remote repositories: GitHub, GitLab, Bitbucket"
+		],
+		"jquery": [
+			"DOM manipulation and dynamic content",
+			"Event handling: click, hover, change, submit",
+			"Animations: fadeIn, fadeOut, slideUp, slideDown",
+			"AJAX integration for asynchronous data",
+			"Cross-browser compatibility and performance"
+		],
+		"ajax": [
+			"Understanding of async server communication",
+			"Use of fetch() and XMLHttpRequest",
+			"Handling JSON/XML responses and updating UI",
+			"Backend integration for live data exchange",
+			"Error handling for robustness"
+		],
+		"bootstrap": [
+			"Grid system for responsive layouts",
+			"UI components: modals, alerts, carousels, accordions, navbars",
+			"Custom styling and overrides",
+			"JS-powered elements: dropdowns, tooltips",
+			"SASS integration for customization"
+		],
+		"tailwind_css": [
+			"Utility-first styling for fast UI development",
+			"Responsive layouts with breakpoints: sm, md, lg, xl",
+			"Spacing and alignment using utility classes",
+			"Customization via tailwind.config.js",
+			"Integration with React, Next.js, Vue"
+		],
+		"sass": [
+			"Use of variables, nesting, mixins, inheritance",
+			"Project structuring: partials and imports",
+			"CSS optimization: compression, modularity",
+			"Integration with Bootstrap and Tailwind"
+		],
+		"wordpress": [
+			"Setup, theme customization, plugin management",
+			"Advanced customization using PHP, HTML, CSS, JS",
+			"Content management via WP admin",
+			"Security and performance best practices: SSL, backups, tuning",
+			"SEO via Yoast SEO and other tools"
+		]
+	}
+}

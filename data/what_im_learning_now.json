@@ -1,0 +1,66 @@
+{
+	"what_im_learning_now": {
+		"typescript": {
+			"topics": [
+				"Advanced types: generics, complex types, unions, intersections",
+				"Flexible, reusable, and type-safe functions and classes using generics",
+				"Precise function typing for input/output validation",
+				"Decorators, interfaces, and namespaces for large-scale apps",
+				"Integration with React and Node.js for full-stack development",
+				"Dynamic types for balancing static typing with dynamic data"
+			],
+			"goal": "Master TypeScript to build safer, more readable, and maintainable code in large projects"
+		},
+		"nodejs": {
+			"topics": [
+				"Node.js fundamentals: npm, async operations, HTTP server",
+				"Express.js for routing, middleware, HTTP handling",
+				"Database integration: PostgreSQL (SQL) and MongoDB (NoSQL)",
+				"Asynchronous programming: Promises, async/await, event-driven architecture",
+				"Building and consuming RESTful APIs",
+				"Security: JWT, DDoS protection, data encryption",
+				"Testing frameworks: Mocha, Chai, Jest"
+			],
+			"goal": "Gain expertise in Node.js to develop scalable and secure backend applications"
+		},
+		"graphql": {
+			"topics": [
+				"GraphQL basics: queries, mutations, subscriptions",
+				"Schema design with structured relationships",
+				"Implementing GraphQL backends with DB and external APIs",
+				"Query optimization: pagination, aggregation, batching",
+				"Security: authentication, authorization, request validation",
+				"Using Apollo Server, Apollo Client, Relay",
+				"Full-stack apps with React and GraphQL"
+			],
+			"goal": "Master GraphQL to create efficient and scalable API architectures"
+		},
+		"security": {
+			"topics": [
+				"User authentication: traditional login, OAuth, 2FA",
+				"JWT for secure auth and authorization",
+				"OAuth 2.0 via Google, Facebook, GitHub",
+				"Data security: SSL/TLS encryption, secure storage",
+				"API security: CSRF, XSS, SQL Injection prevention",
+				"Web app security: DDoS protection, brute force, firewall config",
+				"Password security: bcrypt hashing, secure storage",
+				"Monitoring and auditing for access control and prevention"
+			],
+			"goal": "Become an expert in web application security to develop secure and scalable systems"
+		},
+		"advanced_react": {
+			"topics": [
+				"Advanced Hooks: useReducer, useContext, useMemo, useCallback",
+				"Complex multi-page apps with React Router",
+				"State management: Redux Toolkit and Context API",
+				"Performance optimization: lazy loading, memoization, React Profiler",
+				"Component testing: Jest, Enzyme, React Testing Library",
+				"SSR with Next.js for SEO and performance",
+				"Integration with TypeScript for better maintainability",
+				"Context API for advanced global state",
+				"API integration: GraphQL, WebSockets, REST"
+			],
+			"goal": "Develop expertise in React to create fast, scalable, and high-performance frontend applications"
+		}
+	}
+}
