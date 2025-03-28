@@ -39,8 +39,9 @@ OPENAI_API_KEY=tu_wklej_swoj_klucz
 PORT=3000
 
 ### 4. Zainstaluj zależności
-
+```
 npm install
+```
 
 ### 5. Uruchom aplikację
 
