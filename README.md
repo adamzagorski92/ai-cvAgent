@@ -34,9 +34,10 @@ Wygeneruj swój klucz API.
 ### 3. Wklej klucz do pliku .env
 
 Utwórz plik .env w katalogu głównym i dodaj:
-
+```
 OPENAI_API_KEY=tu_wklej_swoj_klucz
 PORT=3000
+```
 
 ### 4. Zainstaluj zależności
 ```
@@ -44,12 +45,14 @@ npm install
 ```
 
 ### 5. Uruchom aplikację
-
+```
 npm start
+```
 
 Po chwili aplikacja będzie dostępna pod adresem:
-
+```
 👉 http://localhost:3000
+```
 
 ### 6. Przygotuj dane w formacie JSON (opcjonalne)
 
