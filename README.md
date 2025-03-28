@@ -1,123 +1,187 @@
 # 🤖 AI CV Agent
 
-**AI CV Agent** to inteligentny asystent kariery, który może reprezentować Ciebie podczas rozmowy z rekruterem.  
-Wykorzystuje model OpenAI (GPT) oraz dane zapisane w plikach JSON, aby prowadzić naturalną i profesjonalną rozmowę w Twoim imieniu.
-
----
-
-## ✨ Co potrafi?
-
-- Odpowiada na pytania rekrutera na podstawie Twojego doświadczenia, edukacji, projektów i umiejętności.
-- Komunikuje się naturalnym językiem, opierając się tylko na danych, które mu dostarczysz.
-- Zlicza tokeny i szacuje koszty sesji.
-- Uruchamiany lokalnie — Ty kontrolujesz dane i klucz API.
+**AI CV Agent** to inteligentny asystent kariery, który może rozmawiać z rekruterem w Twoim imieniu.  
+Wykorzystuje model GPT (OpenAI) oraz Twoje dane zapisane w plikach JSON. Odpowiada naturalnie, profesjonalnie i tylko na podstawie faktów, które mu przekażesz.
 
 ---
 
 ## 🚀 Jak uruchomić?
 
-### 1. Sklonuj repozytorium:
+### 1. Sklonuj repozytorium
 
 ```bash
 git clone https://github.com/adamzagorski92/ai-cvAgent.git
 cd ai-cvAgent
 ```
 
+---
+
 ### 2. Zdobądź klucz API z OpenAI
 
 Zarejestruj się na stronie:
 
-👉 https://auth.openai.com/log-in
+👉 [https://auth.openai.com/log-in](https://auth.openai.com/log-in)
 
 Wygeneruj swój klucz API.
 
-### 3. Wklej klucz do pliku .env
+---
 
-Utwórz plik .env w katalogu głównym i dodaj:
+### 3. Wklej klucz do pliku `.env`
 
+Utwórz plik `.env` w katalogu głównym i dodaj:
+
+```env
 OPENAI_API_KEY=tu_wklej_swoj_klucz
 PORT=3000
+```
+
+---
 
 ### 4. Zainstaluj zależności
 
+```bash
 npm install
+```
+
+---
 
 ### 5. Uruchom aplikację
 
+```bash
 npm start
+```
 
 Po chwili aplikacja będzie dostępna pod adresem:
 
-👉 http://localhost:3000
+👉 [http://localhost:3000](http://localhost:3000)
 
-### 6. Przygotuj dane w formacie JSON (opcjonalne)
+---
 
-Uzupełnij pliki w folderze data/:
-Jeśli zmienisz zawartość tych plików, to agent będzie z nich korzystał
-Póki co są tam dane dotyczące Adama Zagórskiego, aktualne na 28.03.2025r.
+## 📁 Przygotuj dane w formacie JSON
 
-- experience.json
+Uzupełnij pliki w folderze `data/`:
 
-- education.json
+- `experience.json`
+- `education.json`
+- `what_i_know.json`
+- `what_im_learning_now.json`
+- `where_i_want_to_go.json`
+- `additional_skills_and_qualifications.json`
+- `contact.json`
 
-- what_i_know.json
+> Te pliki to Twoja baza wiedzy – agent zna tylko to, co tam wpiszesz.
 
-- what_im_learning_now.json
+---
 
-- where_i_want_to_go.json
+## 🧠 Co potrafi agent?
 
-- additional_skills_and_qualifications.json
+- Prowadzi naturalną rozmowę z rekruterem
+- Reprezentuje Cię na podstawie Twoich danych
+- Nie wymyśla – opiera się wyłącznie na faktach z JSON
+- Liczy tokeny i szacuje koszt rozmowy
 
-- contact.json
+---
 
-### 7. 🧠 Co potrafi agent?
+## 🛠 Wykorzystane technologie
 
-Prowadzi naturalną rozmowę z rekruterem
+- Node.js + Express
+- OpenAI (GPT-4o / GPT-3.5)
+- HTML, CSS, JS (frontend terminalowy i webowy)
+- Pliki `.env` i lokalne logowanie tokenów
 
-Reprezentuje Cię na podstawie Twoich danych
+---
 
-Nie wymyśla – opiera się wyłącznie na faktach z JSON
+## 9. Co warto byłoby ulepszyć?
 
-Liczy tokeny i szacuje koszt rozmowy
+W przyszłości projekt można rozbudować o **moduł RAG (Retrieval-Augmented Generation)**. Umożliwi on dynamiczne wyszukiwanie tylko najbardziej trafnych fragmentów wiedzy z plików `.json`, a następnie przekazywanie ich do modelu AI.
 
-### 8. 🛠 Wykorzystane technologie
+### 🔍 Dlaczego RAG?
 
-Node.js + Express
+- 🔹 Zmniejsza liczbę tokenów przekazywanych do modelu → **niższe koszty**
+- 🔹 Zwiększa **trafność odpowiedzi**
+- 🔹 Daje większą **kontrolę nad wiedzą**, z której korzysta agent
 
-OpenAI (GPT-4o / GPT-3.5)
+Dodatkowo, można rozważyć **zbieranie danych z zapytań użytkowników** i ulepszanie bazy wiedzy poprzez automatyczne dodawanie wygenerowanych odpowiedzi poza głównym promptem. W ten sposób model AI byłby wykorzystywany tylko w niestandardowych przypadkach.
 
-HTML, CSS, JS (frontend terminalowy i webowy)
+---
 
-Pliki .env i lokalne logowanie tokenów
+## 🧠 Lokalne vs zdalne działanie
 
-### 9. Co warto byloby poprawić?
+### 🖥️ Tryb lokalny (np. wewnątrz firmy)
 
-Możnaby dopisać opcjonalny moduł RAG (Retrieval-Augmented Generation) w połączeniu z Agentem AI.
-Możnaby zbierać dane z wyszukiwań użytkowników i ulepszać bazę danych dodając odpowiedzi generowane poza promptem.
-W sytuacjach niestandardowych dopiero posiłkować się modelem AI, co z biegiem czasu powinno zmneijszyć koszty.
+Można uruchomić lokalne modele (np. **LLaMA**, **Mixtral**, **Mistral**) bez konieczności korzystania z usług zewnętrznych:
 
-Do działania lokalnego (np do działania wewnątrz firmy), możnaby lokalnego modelu typu LLama lub mistral, co zredukowałoby koszt co jedynie do zuzytego prądu i amortyzacji sprzętu wewnątrz firmy. Wydaje mi się, że byłoby to najtańsze rozwiązanie.
+- Koszty ograniczają się do energii i sprzętu
+- Dane pozostają w pełni prywatne
+- Idealne do środowisk zamkniętych
 
-Jeśli mówimy jednak o zdalnym działaniu, to będzie trzeba się posiłkować dużymi modelami, czy to amerykanskimi, czy chinskimi, a być może naszym polskim Bielikiem! :) W każdym razie będzie trzeba liczyć się z kosztami i to nie małymi.
+### ☁️ Tryb zdalny (np. SaaS, produkt online)
 
-Jedno zapytanie zużywa 5500-6000 tokenów (biorąc pod uwagę aktualną bazę danych, którą możesz sobie przejrzeć w folderze "data") Co przy najnowszym gpt-4o przekłada się na około 0,03$ za zapytanie.
-Daje to około 33-35 zapytań za 1$! To dość drogo!
-Opcjonalnie można uzyć modelu gpt-3.5-turbo, który jest 10 razy tańszy, co przełoży się na 330-350 zapytań za dolara!
+Wymaga użycia zewnętrznych modeli (np. **OpenAI**, **Baidu**, a może w przyszłości **Bielik** 🇵🇱). W tym przypadku należy liczyć się z kosztami.
 
-Naturalnie należałoby wdrożyć sporo mechanizmów z dziedziny cybersecurity, aby zabezpieczyć się przed DDoS lub innymi botami, które mogłyby momentalnie doprowadzić do ruiny finansowej niejedną firmę będąc "ciekawskim" w wysyłaniu zapytań do takiego bota.
+---
 
-Być może warto byłoby wdrożyć dostępność do takiego modułu za bramką logowania. ((nie dla każdego- tylko dla zautoryzowanych uzytkowmników))
+## 💸 Przykład kosztów zapytania
 
-### PODSUMOWANIE
+Przy aktualnej bazie danych (folder `data/`) jedno zapytanie zużywa około **5500–6000 tokenów**.
 
-Ogólnie ten skrypt (agent) działa lokalnie, więc nie ma się czego bać.
-Jeśli chcesz potestować sobie zapytania i zmniejszyć koszty takich testów, to przejdź do
-routes>chatRoute.js
-a następnie poszukaj takiego kodu i zrób to:
+| Model           | Koszt zapytania | Zapytania za 1 USD |
+| --------------- | --------------- | ------------------ |
+| `gpt-4o`        | ok. **$0.03**   | ~33                |
+| `gpt-3.5-turbo` | ok. **$0.003**  | ~330               |
 
+➡️ **Wniosek:** Testuj na tańszym modelu (`gpt-3.5-turbo`), a przełączaj na `gpt-4o` tylko wtedy, gdy naprawdę zależy Ci na jakości.
+
+---
+
+## 🛡️ Cyberbezpieczeństwo
+
+Jeśli planujesz udostępnić agenta publicznie, koniecznie zadbaj o zabezpieczenia:
+
+- 🧱 **Rate limiting** – ogranicz liczbę zapytań na IP
+- 🔐 **Autoryzacja** – logowanie tylko dla uprawnionych użytkowników
+- 🛡️ **Ochrona przed DDoS** – unikaj przeciążeń i nadużyć
+
+Bez odpowiednich zabezpieczeń nawet prosty bot może szybko wygenerować ogromne koszty i narazić Twoją aplikację na problemy.
+
+---
+
+## ✅ Podsumowanie
+
+Agent działa w trybie **lokalnym**, więc możesz bezpiecznie testować jego możliwości bez ponoszenia kosztów czy ryzyka udostępniania danych na zewnątrz.
+
+Aby **zmniejszyć koszty testów**, warto tymczasowo przełączyć model z `gpt-4o` na tańszy `gpt-3.5-turbo`.
+
+### 🔧 Jak to zrobić?
+
+1. Otwórz plik:
+
+```
+routes/chatRoute.js
+```
+
+2. Znajdź fragment:
+
+```js
 const response = await client.chat.completions.create({
-model: 'gpt-4o', <---- ZAKOMENTUJ TĘ LINIĘ
-// model: 'gpt-4o', <---- ODKOMENTUJ TĘ LINIĘ
-messages,
-temperature: 0.7, <---- (OPCJONALNIE) pobaw się tym paramterem 0d 0 do 1. Im większa liczba tym model bardziej kreatywny, a im mniejsza tym bardziej konserwatywny
+	model: 'gpt-4o',
+	messages,
+	temperature: 0.7,
 });
+```
+
+3. I zamień go na:
+
+```js
+const response = await client.chat.completions.create({
+	model: 'gpt-3.5-turbo', // ✅ tańszy model — 10x mniej kosztowny
+	messages,
+	temperature: 0.7, // 🎛️ Zakres 0–1: im wyższa wartość, tym bardziej kreatywna odpowiedź
+});
+```
+
+> 💡 Tip: `temperature` możesz regulować od `0` (bardziej precyzyjny, "konserwatywny" styl) do `1` (bardziej swobodna, kreatywna forma wypowiedzi).
+
+---
+
+Gotowe! Możesz teraz rozwijać swojego AI Asystenta Kariery. 💼🤖
