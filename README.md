@@ -28,36 +28,26 @@ Wygeneruj swój klucz API.
 
 ### 3. Wklej klucz do pliku `.env`
 
-Utwórz plik `.env` w katalogu głównym i dodaj:
+Utwórz plik .env w katalogu głównym i dodaj:
 
-```env
 OPENAI_API_KEY=tu_wklej_swoj_klucz
 PORT=3000
-```
-
----
 
 ### 4. Zainstaluj zależności
 
-```bash
 npm install
-```
-
----
 
 ### 5. Uruchom aplikację
 
-```bash
 npm start
+
 ```
 
 Po chwili aplikacja będzie dostępna pod adresem:
 
-👉 [http://localhost:3000](http://localhost:3000)
+👉 http://localhost:3000
 
----
-
-## 📁 Przygotuj dane w formacie JSON
+### 6. Przygotuj dane w formacie JSON (opcjonalne)
 
 Uzupełnij pliki w folderze `data/`:
 
@@ -157,8 +147,10 @@ Aby **zmniejszyć koszty testów**, warto tymczasowo przełączyć model z `gpt-
 1. Otwórz plik:
 
 ```
+
 routes/chatRoute.js
-```
+
+````
 
 2. Znajdź fragment:
 
@@ -168,7 +160,7 @@ const response = await client.chat.completions.create({
 	messages,
 	temperature: 0.7,
 });
-```
+````
 
 3. I zamień go na:
 
